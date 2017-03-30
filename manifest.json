@@ -1,0 +1,19 @@
+{
+	"name": "AmazonLibraryAutoFill",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "大学図書館へ新規購入依頼を出すときに、AmazonのURLをポップアップに貼り付ければ、自動的にフォームを埋めてくれるプログラムです。",
+    "permissions": ["tabs", "http://*/*"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["jquery.js","script.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "AmazonLibraryAutoFill",
+        "default_popup": "popup.html"
+    }
+}
+
