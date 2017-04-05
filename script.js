@@ -1,5 +1,6 @@
 $(function(){
     chrome.runtime.onMessage.addListener(function(msg,sender,sendResponse){
+        //alert("");
     	$("input[name=bibtr]").val(msg.title);
     	$("input[name=bibpb]").val(msg.publisher);
     	$("input[name=isbn]").val(msg.isbn);
