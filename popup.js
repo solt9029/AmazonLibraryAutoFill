@@ -2,7 +2,7 @@ $(function(){
 	$("#url").on("input",function(){
 		$.ajax({
 			type:"GET",
-			url:"http://solt9029.sakura.ne.jp/WrapperAPI/amazon",
+			url:"http://wrapperapi.solt9029.com/amazon",
 			data:{url:$("#url").val()},
 			success:function(data){
 				data=$.parseJSON(data);
